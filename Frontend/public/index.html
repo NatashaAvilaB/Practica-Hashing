@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TC2005B</title>
+    <style>
+        .radio-grupo {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi primera página web</h1>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="./tags.html">Tags</a></li>
+        </ol>
+    </nav>
+
+    <div>
+        <input type="text" id="inputUsuario" placeholder="usuario" />
+        <input type="password" id="inputPassword" placeholder="contraseña" />
+        <button id="btnLogin">Login</button>
+        <p id="mensajeLogin"></p>
+    </div>
+
+    <div class="radio-grupo">
+        <label><input type="radio" name="tipo" id="rdInvitado" /> invitado</label>
+        <label><input type="radio" name="tipo" id="rdPonente" />  ponente</label>
+        <label><input type="radio" name="tipo" id="rdSocio" />    socio</label>
+    </div>
+
+    <button id="btnEnviar">Enviar</button>
+
+    <div>
+        <select id="selPaises">
+            <option value="">-- selecciona un país --</option>
+        </select>
+
+        <select id="selRegiones" disabled>
+            <option value="">-- selecciona una región --</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label><input type="checkbox" id="chkTerms" /> Términos y condiciones</label>
+        <label><input type="checkbox" id="chkEmail" /> Deseas que te mandemos un email</label>
+    </div>
+
+    <button id="btnFinalizar" disabled>Finalizar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
